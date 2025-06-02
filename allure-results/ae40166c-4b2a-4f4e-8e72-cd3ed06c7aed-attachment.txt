@@ -1,0 +1,5 @@
+Registration is completed:  Wellington.Nicolas@yahoo.com
+ Logout is completed
+ Login is completed
+ Logout is completed
+4

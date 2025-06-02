@@ -1,0 +1,9 @@
+Registration is completed:  Richmond72@yahoo.com
+ Logout is completed after registration
+ Login with registered email is completed
+ Logout is completed after relogin
+4
+Product added to the cart
+you are in Shopping Cart Page
+$1,204.00
+shopping cart verification completed

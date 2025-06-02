@@ -1,0 +1,2 @@
+3
+Product not found to select TypeError: Cannot read properties of undefined (reading 'textContent')

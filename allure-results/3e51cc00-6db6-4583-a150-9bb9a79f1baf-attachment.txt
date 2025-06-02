@@ -1,0 +1,19 @@
+Registration is completed:  Carley35@gmail.com
+Exception occured while clicking 'Login':Error: locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('a[href*=\'account/login\']')
+    - locator resolved to <a href="http://localhost/opencart/upload/index.php?route=account/login">Login</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    247 × waiting for element to be visible, enabled and stable
+        - element is not visible
+      - retrying click action
+        - waiting 500ms
+

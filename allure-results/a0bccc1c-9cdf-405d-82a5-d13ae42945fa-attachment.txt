@@ -1,0 +1,7 @@
+Registration is completed:  Nicolas58@yahoo.com
+ Logout is completed after registration
+ Login with registered email is completed
+ Logout is completed after relogin
+4
+Product added to the cart
+0

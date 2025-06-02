@@ -1,0 +1,2 @@
+Product is not available TypeError: Cannot read properties of undefined (reading 'innerText')
+Product is not available Error: locator.count: Target page, context or browser has been closed

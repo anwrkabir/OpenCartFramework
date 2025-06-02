@@ -1,0 +1,130 @@
+# Test info
+
+- Name:  Test Case: Add product to Cart @master @regression
+- Location: C:\OpenCartPlaywright\tests\AddToCart.spec.ts:54:5
+
+# Error details
+
+```
+Error: locator.click: Unexpected token "")"" while parsing css selector "div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(1) > p:nth-child(2) > a:nth-child(1) > strong:nth-child(1)')". Did you mean to CSS.escape it?
+Call log:
+  - waiting for div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(1) > p:nth-child(2) > a:nth-child(1) > strong:nth-child(1)')
+
+    at ProductPage.clickOnViewCartLink (C:\OpenCartPlaywright\pages\ProductPage.ts:210:29)
+    at C:\OpenCartPlaywright\tests\AddToCart.spec.ts:95:24
+```
+
+# Test source
+
+```ts
+  110 |  * 5) click on the "Add to Cart" button
+  111 |  * @return : Promise<void>
+  112 |  * @param: none
+  113 |  * 
+  114 |  * **/
+  115 |
+  116 | async addProductToCart():Promise<void>{
+  117 |     await this.btnproductAddToCart.click();
+  118 | }
+  119 |
+  120 |
+  121 | /**
+  122 |  * 6) After click on the "Click to button" validate that the successConfirmationMessage displayed
+  123 |  * @param: none
+  124 |  * @return: Promise<boolean>
+  125 |  * 
+  126 |  * **/
+  127 |
+  128 | async isSuccessconfirmation():Promise<boolean>{
+  129 |
+  130 |     try {
+  131 |         console.log(this.successConfirmationMsg);
+  132 |         if(await this.successConfirmationMsg.isVisible){
+  133 |             return true;
+  134 |         }
+  135 |         else{ 
+  136 |             return false;
+  137 |         }
+  138 |         
+  139 |     } catch (error) {
+  140 |         console.log(`The successful message is not visible${error}`)
+  141 |         return false;
+  142 |     }
+  143 |     
+  144 | }
+  145 |
+  146 |
+  147 | /**
+  148 |  * 7) The black box should display : " 1 item(s) - $602.00"(buttonblackcartItem)
+  149 |  * @return: Promise<boolean>
+  150 |  * @param: productPrice:string
+  151 |  * **/
+  152 |
+  153 |
+  154 | async IsdisplayOfPriceAndQtyInBlackCartIcon(productPrice:string):Promise<boolean>{
+  155 |    try {
+  156 |      const priceAndQty = await this.buttonblackcartItem.textContent();
+  157 |      if(priceAndQty?.includes(productPrice)){
+  158 |          return true;
+  159 |      }
+  160 |        else{ 
+  161 |             return false;
+  162 |         }
+  163 |    } catch (error) {
+  164 |     console.log(" the black cart button having issue with the price and and quantity ordered");
+  165 |        return false;
+  166 |    }
+  167 |
+  168 |
+  169 |      
+  170 | }
+  171 |
+  172 |
+  173 | /**
+  174 |  * 8) click on that black box to navigate to drop down menu
+  175 |  * @ return : Promise<void>
+  176 |  * @ param: none
+  177 |  * ***/
+  178 |
+  179 |
+  180 | async clickBlackBoxCartField():Promise<void>{
+  181 |     await this.buttonblackcartItem.click();
+  182 | }
+  183 |
+  184 | //9. In the Cart page, ensure that the totalPrice is displaying $602(totalPrice)
+  185 | async viewTotalPriceInCartPage( totalPrice):Promise<boolean>{
+  186 |  try {
+  187 |        const totalpriceInCartPage = this.totalPrice.textContent();
+  188 |        if(totalpriceInCartPage === totalPrice){
+  189 |            return true;
+  190 |        }
+  191 |
+  192 |        else{ return false;}
+  193 |          
+  194 |  } catch (error) {
+  195 |      console.log("The total price is not showing the expected total price");
+  196 |       return false;
+  197 |  }
+  198 |
+  199 | }
+  200 |
+  201 | /**
+  202 |  * 10) In that cart page, click on the "View Cart" link to navigate to the "ShoppingCart" page
+  203 |  * @param:none
+  204 |  * @return:Promise<ShoppingCartPage>
+  205 |  * 
+  206 |  * **/
+  207 |
+  208 |
+  209 | async clickOnViewCartLink():Promise<ShoppingCartPage>{
+> 210 |     await this.viewCartLink.click();
+      |                             ^ Error: locator.click: Unexpected token "")"" while parsing css selector "div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(1) > p:nth-child(2) > a:nth-child(1) > strong:nth-child(1)')". Did you mean to CSS.escape it?
+  211 |     return new ShoppingCartPage(this.page);
+  212 |
+  213 | }
+  214 |
+  215 |
+  216 |
+  217 | }
+  218 |
+```

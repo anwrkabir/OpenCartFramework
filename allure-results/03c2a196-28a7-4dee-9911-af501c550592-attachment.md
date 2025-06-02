@@ -1,0 +1,233 @@
+# Test info
+
+- Name: Log in test with JSON Data : Valid login@datadriven
+- Location: C:\OpenCartPlaywright\tests\LoginDataDriven.spec.ts:15:9
+
+# Error details
+
+```
+Error: expect(received).toBeTruthy()
+
+Received: false
+    at C:\OpenCartPlaywright\tests\LoginDataDriven.spec.ts:31:32
+```
+
+# Page snapshot
+
+```yaml
+- navigation:
+  - button "$ Currency ":
+    - strong: $
+    - text: Currency 
+  - list:
+    - listitem:
+      - link "":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/contact
+      - text: "123456789"
+    - listitem:
+      - link " My Account":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/account
+    - listitem:
+      - link " Wish List (0)":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/wishlist
+    - listitem:
+      - link " Shopping Cart":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=checkout/cart
+    - listitem:
+      - link " Checkout":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=checkout/checkout
+- banner:
+  - link "naveenopencart":
+    - /url: https://naveenautomationlabs.com/opencart/index.php?route=common/home
+    - img "naveenopencart"
+  - textbox "Search"
+  - button ""
+  - button " 0 item(s) - $0.00"
+- navigation:
+  - list:
+    - listitem:
+      - link "Desktops":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=20
+    - listitem:
+      - link "Laptops & Notebooks":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=18
+    - listitem:
+      - link "Components":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=25
+    - listitem:
+      - link "Tablets":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=57
+    - listitem:
+      - link "Software":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=17
+    - listitem:
+      - link "Phones & PDAs":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=24
+    - listitem:
+      - link "Cameras":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=33
+    - listitem:
+      - link "MP3 Players":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=34
+- list:
+  - listitem:
+    - link "":
+      - /url: https://naveenautomationlabs.com/opencart/index.php?route=common/home
+  - listitem:
+    - link "Account":
+      - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/account
+  - listitem:
+    - link "Login":
+      - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/login
+- text: " Warning: No match for E-Mail Address and/or Password."
+- heading "New Customer" [level=2]
+- paragraph:
+  - strong: Register Account
+- paragraph: By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.
+- link "Continue":
+  - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/register
+- heading "Returning Customer" [level=2]
+- paragraph:
+  - strong: I am a returning customer
+- text: E-Mail Address
+- textbox "E-Mail Address": anwrkabir@gmail.com
+- text: Password
+- textbox "Password": kabir12
+- link "Forgotten Password":
+  - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/forgotten
+- button "Login"
+- complementary:
+  - link "Login":
+    - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/login
+  - link "Register":
+    - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/register
+  - link "Forgotten Password":
+    - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/forgotten
+  - link "My Account":
+    - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/account
+  - link "Address Book":
+    - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/address
+  - link "Wish List":
+    - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/wishlist
+  - link "Order History":
+    - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/order
+  - link "Downloads":
+    - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/download
+  - link "Recurring payments":
+    - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/recurring
+  - link "Reward Points":
+    - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/reward
+  - link "Returns":
+    - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/return
+  - link "Transactions":
+    - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/transaction
+  - link "Newsletter":
+    - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/newsletter
+- contentinfo:
+  - heading "Information" [level=5]
+  - list:
+    - listitem:
+      - link "About Us":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/information&information_id=4
+    - listitem:
+      - link "Delivery Information":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/information&information_id=6
+    - listitem:
+      - link "Privacy Policy":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/information&information_id=3
+    - listitem:
+      - link "Terms & Conditions":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/information&information_id=5
+  - heading "Customer Service" [level=5]
+  - list:
+    - listitem:
+      - link "Contact Us":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/contact
+    - listitem:
+      - link "Returns":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/return/add
+    - listitem:
+      - link "Site Map":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/sitemap
+  - heading "Extras" [level=5]
+  - list:
+    - listitem:
+      - link "Brands":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/manufacturer
+    - listitem:
+      - link "Gift Certificates":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/voucher
+    - listitem:
+      - link "Affiliate":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=affiliate/login
+    - listitem:
+      - link "Specials":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/special
+  - heading "My Account" [level=5]
+  - list:
+    - listitem:
+      - link "My Account":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/account
+    - listitem:
+      - link "Order History":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/order
+    - listitem:
+      - link "Wish List":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/wishlist
+    - listitem:
+      - link "Newsletter":
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/newsletter
+  - separator
+  - paragraph:
+    - text: Powered By
+    - link "OpenCart":
+      - /url: http://www.opencart.com
+    - text: naveenopencart © 2025
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from "@playwright/test";
+   2 | import { HomePage } from "../pages/HomePage";
+   3 | import { Login } from "../pages/Login";
+   4 | import { MyAccountPage } from "../pages/MyAccountPage";
+   5 | import { TestConfig } from "../test.config";
+   6 | import { dataProvider } from "../utils/dataProvider";
+   7 |
+   8 |
+   9 | // Load JSOn test data from file( logindata.json)
+  10 | const jsonPath ="testdata/logindata.json";
+  11 | const jsonTestData =  dataProvider.getTestDataFromJson(jsonPath);
+  12 |
+  13 | for(const data of jsonTestData){
+  14 |
+  15 |     test(`Log in test with JSON Data : ${data.testName}@datadriven`, async ({page})=>{
+  16 |
+  17 |          const config = new TestConfig(); // create instance
+  18 |         await page.goto(config.appUrl);    // getting appURL from test.config.ts file
+  19 |
+  20 |         const homePage = new HomePage(page);
+  21 |         await homePage.clickMyAccount();
+  22 |         await homePage.clickLogin();
+  23 |
+  24 |         const loginPage = new Login(page);
+  25 |         await loginPage.login(data.email, data.password);
+  26 |
+  27 |         if(data.expected.toLowerCase()==='success')
+  28 |         {
+  29 |             const myAccountPage=new MyAccountPage(page);
+  30 |             const isLoggedIn=await myAccountPage.isMyAccountPageExists();
+> 31 |             expect(isLoggedIn).toBeTruthy();
+     |                                ^ Error: expect(received).toBeTruthy()
+  32 |
+  33 |         }
+  34 |         else{
+  35 |             const errorMessage=await loginPage.getloginErrorMessage();
+  36 |             expect(errorMessage).toBe('Warning: No match for E-Mail Address and/or Password.');
+  37 |             //expect(errorMessage).toContain('Warning: No match');
+  38 |         }
+  39 |     })
+  40 |
+  41 | }
+```
