@@ -1,9 +1,0 @@
-Exception occured while entering product name':Error: locator.fill: Test ended.
-Call log:
-  - waiting for locator('input[placeholder=\'Search\']')
-
-Exception occured while clicking 'search'button:Error: locator.click: Test ended.
-Call log:
-  - waiting for locator('#search button[type=\'button\']')
-
-Product is not available Error: locator.count: Test ended.

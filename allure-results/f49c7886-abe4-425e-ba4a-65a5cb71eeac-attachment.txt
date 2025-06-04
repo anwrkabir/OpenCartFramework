@@ -1,7 +1,0 @@
-Registration is completed:  Jeramie_Cummerata94@hotmail.com
- Logout is completed after registration
- Login with registered email is completed
- Logout is completed after relogin
-4
-Product added to the cart
-0

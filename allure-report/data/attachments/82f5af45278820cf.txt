@@ -1,0 +1,10 @@
+✅Registration is completed:  Lonny.Mayer@gmail.com
+✅ Product added to the cart!
+ ✅ Logout is completed after registration
+✅ Login with registered email is completed
+✅ Logout is completed after relogin
+4
+🛒 Product added to the cart
+you are in Shopping Cart Page
+$1,204.00
+🚀shopping cart verification completed
