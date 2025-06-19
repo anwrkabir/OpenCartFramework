@@ -10,7 +10,7 @@ Components of the framework:
 		6. Each class used "page" and "Locator" fixture from "@playwright/test" for every class
 		7. To transfer from one page to another page, used one method which retuns the instance of the next page 
 		8. All the classes have  "export"  keyword so it can be imported in another class.( modular programming)
-	    9. Locators defined as "private"( encapsulation) and "readonly"( not updateable)
+	    9. Locators defined as "private"( encapsulation) and "readonly"( not updateable).
 		
 	2. TestData:
 	    In test data folder we have JSON, csv files which contain data used for our application.
