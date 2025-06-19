@@ -75,7 +75,7 @@ test("End to End Test @end-to-end @master", async({page})=>{
 
    // created a function to create a registration 
     async function performRegistration(page:Page):Promise<string>{
-         const homePage = new HomePage( page);
+        const homePage = new HomePage( page);
         await  homePage.clickMyAccount();
         await  homePage.clickRegister();
 

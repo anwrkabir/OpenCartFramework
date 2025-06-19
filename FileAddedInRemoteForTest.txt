@@ -1,7 +1,65 @@
-This file created in github remote repository for learning purpose.
+Components of the framework:
+==========================
+1.Pages(POM)
+		All the Page Object Model classes saved in the page folder
+		1. We have created page folders with POM classes, here we have created pages or classes according to the modules which contains locator, constructors and action methods.
+		2. Every locator in the classes are specifically for that classes and read only.
+		3. Constructors within POM are used to initializing the locators and other pages Specific elements.
+		4. Each Class should contain methods for interacting with UI elements of that page.
+		5. Action methods defined the expected workflow actions and to verify that each element is present or not 
+		6. Each class used "page" and "Locator" fixture from "@playwright/test" for every class
+		7. To transfer from one page to another page, used one method which retuns the instance of the next page 
+		8. All the classes have  "export"  keyword so it can be imported in another class.( modular programming)
+	    9. Locators defined as "private"( encapsulation) and "readonly"( not updateable)
+		
+	2. TestData:
+	    In test data folder we have JSON, csv files which contain data used for our application.
+		
+		
+	3.  Utils:
+		1. In the utils folder we have created data provider util/class which contains static function for reading data for csv and JSON files from the test data folder
+		2. Also created random data generator to create random data ( faker library)
+	
+	
+	4. test.Config.ts
+		we have crated one test.config.ts which includes global data, like URL, login credentails used in our application
+	
+	5. Reporters
+		For reporting pupose, I have used HTML Reporter and Allure Reporter
+		
+	6. Package.json
+		package.json is the test runner file in the framework, which contains name of the project dependencies and scripts 
+		1. Defined the name of the test Project
+		2. Defined the version of the test project
+		used tag to classify tests( in the test used @tag and that tag later on used in package.json)
+		2. define the library dependecies that will be used during runtime at "dependecies"
+		3. Defined the development-only packages that require for running , writing and reporting of the playwright test code
+		
+		
+	7. Test
+		Test folder contains test scripts.
+		In the test import required packages, declare reusable variables, used playwright hooks and initialize the page objects and other logics
 
-/************
-After pulling to the local repository, I am making these changes in the work directory.
-Today is a good day and I am doing good....12
-123
-Thanks
+		1. Imported test( for test) , expect( for assertion)fixture from "@playwright/test"
+		2. Used beforeEachHook to define the respective objects and login
+		3. Used afterEachHook to close the page and browser
+		4. In the test, added tag and test steps
+	
+	8. Playwright.config.ts
+		In this defined test configuration file, defined
+		1.autowait timeout, 
+		2. test directory ,
+		3. parallel test exectuion
+		4. Retries and number of workers for Continuous integration
+		5. default set up in 'use' block for all playwright tests
+		5.a. Recording a trace file when the test failed and retried( trace:'on-first-retry'
+		5.b.Takes a screenshot only when a test fails(screenshot: 'only-on-failure')
+		5.c .Records test execution only if the test fails, and saves the video for inspection.(video: 'retain-on-failure')
+		5.d. Sets the default browser window size.(viewport: { width: 1280, height: 720 }
+		5.e. Ignores SSL certificate errors (like self-signed or expired certs).( ignoreHTTPSErrors: true)
+		5.f. Automatically grants geolocation permissions to the browser context.( permissions: ['geolocation'])
+
+		
+		
+	to run :
+	npm run test:end-to-end ( defined in the package.json)
