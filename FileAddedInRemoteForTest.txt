@@ -57,7 +57,7 @@ Components of the framework:
 		5.c .Records test execution only if the test fails, and saves the video for inspection.(video: 'retain-on-failure')
 		5.d. Sets the default browser window size.(viewport: { width: 1280, height: 720 }
 		5.e. Ignores SSL certificate errors (like self-signed or expired certs).( ignoreHTTPSErrors: true).
-		5.f. Automatically grants geolocation permissions to the browser context.( permissions: ['geolocation']).
+		5.f. Automatically grants geolocation permissions to the browser context.( permissions: ['geolocation'])..
 
 		
 		
