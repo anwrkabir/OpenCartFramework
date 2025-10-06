@@ -1,5 +1,5 @@
 export class TestConfig {
-  appUrl="https://naveenautomationlabs.com/opencart"
+  appUrl="https://automationlabs.com/opencart"
 
   //valid login credentials
   email = "anwrkabir@gmail.com";
