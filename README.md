@@ -1,4 +1,5 @@
-OpenCart Playwright Automation Framework
+OpenCart Playwright Automation Framework:
+=======================================
 
 Robust end-to-end test automation for an OpenCart e-commerce site using Playwright + TypeScript. The framework is structured with Page Object Model (POM), data-driven tests, reusable utilities, Allure reports, and is CI-ready (GitHub Actions). Repo includes allure-results/, allure-report/, tests/, testdata/, utils/, .github/workflows/, and setup scripts like env_setup.bat. 
 
