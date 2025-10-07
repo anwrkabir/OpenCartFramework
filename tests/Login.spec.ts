@@ -41,7 +41,7 @@ test.afterEach("", async ({ page }) => {
   await page.close(); // close browser tab
 });
 
-test("User login test @master @sanity  @regression", async ({ page }) => {
+test("1.User login test @master @sanity  @regression", async ({ page }) => {
   //Navigate to login page via Home Page
   await homePage.clickMyAccount();
   await homePage.clickLogin();

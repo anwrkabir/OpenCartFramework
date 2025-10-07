@@ -37,7 +37,7 @@ test.afterEach(async ({page})=>{
 })
 
 
-test('User registrtaion test @master @sanity  @regression',async ({})=>{ // as page fixure is already 
+test('2.User registrtaion test @master @sanity  @regression',async ({})=>{ // as page fixure is already 
 
  
     homePage.clickMyAccount();

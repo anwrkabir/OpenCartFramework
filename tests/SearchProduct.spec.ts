@@ -40,7 +40,7 @@ test.afterEach("", async({page})=>{
     page.close();
 })
 
-test(" Product search test @master @regression",async({page})=>{
+test("3.Product search test @master @regression",async({page})=>{
     
     await homepage.enterProductName(config.productName);
     await homepage.clickSearchButton();

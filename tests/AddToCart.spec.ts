@@ -51,7 +51,7 @@ test.afterEach("", async({page})=>{
     await page.close();
 })
 
-test(" Test Case: Add product to Cart @master @regression", async ({page})=>{
+test("4. Test Case: Add product to Cart @master @regression", async ({page})=>{
 
 
  //  2) Enter the existing product name in the search box
