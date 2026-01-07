@@ -11,7 +11,7 @@ Features:
 - Data-driven testing via testdata/.
 - Utilities in utils/ for common actions, assertions, and helpers.
 - Allure reporting: allure-results/ and generated allure-report/ included for shareable insights.
-- CI-ready: .github/workflows/ contains pipeline definitions for automated runs.
+- CI-ready: .github/workflows/ contains pipeline definitions for automated runs..
   
 Project Structure:
 ================
